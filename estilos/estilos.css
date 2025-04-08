@@ -1,0 +1,66 @@
+
+/*Aqui va a ir los estilos css para el index.html*/
+*{
+    /*Elimina el margen por defecto de todos los elementos de html*/
+    margin: 6;
+    /*Elimia el padding por defecto de todos los elementos de html*/
+    padding: 5;
+    /*Definos el modelo de caja para navegadores basados en webtkig
+     gooleChrome, Internet exploret, edge*/
+     -webkit-box-sizing:border-box;
+     /*Definimos el modelo de cajas para navegadores basaos en mozilla,
+      firefox, opera.*/
+      -moz-box-sizing:border-box;
+      /*Definimos el modelo de cajass para navegadores basados en estandar*/
+      box-sizing:border-box;
+}
+/*Definimos los estilos para el body*/
+body{
+    font-family:"Open Sans", Arial, sans-serif ;
+    font-size: 19px;
+}
+/*Trabajamos en los estilos en la clase del contenedor*/
+.contenedor{
+    /*vamos a definir el ancho delcontenedor*/
+    width: 100%;
+    /*Definimos el color del fondo del contenedor*/
+    background-color: rgb(0, 255, 0);
+    /*Definimos la anchura maxima de del contenedor*/
+    max-width: 1200px;
+/*Definimos el margen en automatico para centrar el contenedor*/
+margin: auto;
+/*Ocultamos el desbordamiento del contenedor*/
+overflow: hidden;
+}
+
+/*Le damos estilos al header*/
+header{
+    /*Definimos el tamaño del header a un 90%*/
+    width: 90%;
+    /*Definimos la imagen del fondo*/
+    background: url(../img/2.jpg);
+  /*Definimos el color de fondo del header*/
+  background-size: cover;
+  background-attachment: fixed;
+  /*Definimos que la imagen tenga una posicion centrada*/
+  background-position: 0;
+}
+
+/*Le damos estilos al header y que busque una clase que se llame contenedor*/
+header .contenedor{
+    /*Definimos que el header tenga una posicion relativa*/
+    position: reativa;
+    height: 500px;
+  }
+  
+  /*Le damos estilos al menu dentro del header*/
+  header .menu{
+    /*Le damos el tamaño de la anchura*/
+    width: 100;
+    /*Le decimos que alinee el texto a la derecha*/
+    text-align: center;
+  
+  }
+  
+    
+  
