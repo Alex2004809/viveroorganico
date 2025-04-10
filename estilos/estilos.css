@@ -2,9 +2,9 @@
 /*Aqui va a ir los estilos css para el index.html*/
 *{
     /*Elimina el margen por defecto de todos los elementos de html*/
-    margin: 6;
+    margin: 0;
     /*Elimia el padding por defecto de todos los elementos de html*/
-    padding: 5;
+    padding: 0;
     /*Definos el modelo de caja para navegadores basados en webtkig
      gooleChrome, Internet exploret, edge*/
      -webkit-box-sizing:border-box;
@@ -24,9 +24,9 @@ body{
     /*vamos a definir el ancho delcontenedor*/
     width: 100%;
     /*Definimos el color del fondo del contenedor*
-    background-color: rgb(0, 255, 0);/
+    background-color: rgb(0, 102, 255);/
     /*Definimos la anchura maxima de del contenedor*/
-    max-width: 1600px;
+    max-width: 1500px;
 /*Definimos el margen en automatico para centrar el contenedor*/
 margin: auto;
 /*Ocultamos el desbordamiento del contenedor*/
@@ -35,7 +35,7 @@ overflow: hidden;
 
 /*Le damos estilos al header*/
 header{
-    /*Definimos el tamaño del header a un 90%*/
+    /*Definimos el tamaño del header a un 100%*/
     width: 100%;
     /*Definimos la imagen del fondo*/
     background: url(../img/2.jpg);
@@ -43,7 +43,7 @@ header{
   background-size: cover;
   background-attachment: fixed;
   /*Definimos que la imagen tenga una posicion centrada*/
-  background-position: 0;
+  background-position: 5;
 }
 
 /*Le damos estilos al header y que busque una clase que se llame contenedor*/
@@ -54,14 +54,14 @@ header .contenedor{
   }
   
   /*Le damos estilos al menu dentro del header*/
-  header .menu{
+  header .productos{
     /*Le damos el tamaño de la anchura*/
     width: 200;
     /*Le decimos que alinee el texto a la derecha*/
     text-align: right;
   }
-  /*Le damos estilos a las etiquetas del menú*/
-header .menu a{
+  /*Le damos estilos a las etiquetas del producto*/
+header .productos a{
   /*Le voy a dar color a las etiquetas a*/
   color: #fffcfc;
   /*Le voy a dar un tamaño de letra a las etiquetas a*/
@@ -71,13 +71,13 @@ header .menu a{
   /*Display inline-bloc*/
   display: inline-block;
   margin: 50px 30px;
-/*  Quito el margen de menú*/
+/*  Quito el margen de producto*/
   text-decoration: none;
   position: relative;
 }
 
 /*Utilizamos la seudoclase hover*/
-header .menu a:hover{
+header .productos a:hover{
   text-decoration: underline;
 }
 /*Aqui byscamos y trabajamos en la seccion texto*/
@@ -106,14 +106,14 @@ header .texto .nombre span{
 header .texto h3{
   /*Aqui le damos un font-weight para que la letra sea un poco más delgadita*/
   font-weight: 400;
-  font-size: 29px;
+  font-size: 30px;
   /*Agregamos que nuestro fondo de letra sea italica que se vea de forma cursiva*/
   font-style: italic;
 }
 /*------MAIN------*/
 .main{
   /*Agregamos el fondo de la imagen del fondo blanco*/
-  background: url('../img/11.jpg.jpg');
+  background: url('../img/12.jpg');
   background-repeat: repeat;
 }
 
@@ -131,6 +131,111 @@ header .texto h3{
   z-index: 0;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
 }
+
+.main .acerca-de .foto img{
+  vertical-align: top;
+  width: 100%;
+
+}
+
+.main .acerca-de article{
+  /*Le agregamos color en mi caso blanco a la etiqueta Acerca de*/
+  background: #9c8282;
+  /*Le damos un margen en la parte interior acerca de*/
+  padding: 40px;
+  /*Le damos una anchura del 75% al acerca de*/
+  width: 75%;
+  /*Le damos una posicion relativa para que se sobre posisione a la imagen del acerca de */
+  position: relative;
+  top: 120px;
+  z-index: 50px;
+  /*Aqui flotamos el contenedor a la derecha*/
+  float: right;
+  /*Aqui le damos margen a la etiqueta acerca-de*/
+  box-shadow: 0px opx 15px rgba(196, 20, 20, 0.5);
+
+}
+/*Buscamos las siguientes etiquetas*/
+.main .acerca-de article h3{
+  /*Cambiamos la forma oh mejoramos la forma Acerca de*/
+  font-size: 30px;
+  /*Le damos anchura*/
+  font-weight: 300;
+  /*Le damos en la parte de avajo un margen deñ acerca de*/
+  margin-bottom: 40px;
+
+}
+/*Buscamos las siguientes etiquetas que es la p*/
+.main .acerca-de article p{
+  /*Cambiamos la altura de los párrafos y le hacemos mas grandes */
+  line-height: 30px;
+  /*Le damos un interlineado a los párrafos*/
+  margin-bottom: 15px;
+
+}
+
+/*sección productos*/
+.main .productos{
+  /*Le vamos dando forma en la sección productos*/
+  padding-top: 630px;
+  /*Le damos un poco de separación y que no este pegado*/
+  margin-bottom: 50px;
+
+}
+/*Trabajamos en la clase título*/
+.main .productos .titulo{
+  /*Le damos forma a la sección productos*/
+  font-size: 40px;
+  /*Le damos una mejor forma para que se vea mucho más mejor la sección productos*/
+  font-weight: 300;
+  /*Alineamos el texto al centro y ponemos a productos al centro*/
+  text-align: center;
+  /*Hacemos un poco de separaión con la sección productos*/
+  margin-bottom: 50px;
+
+}
+/*Entramos a un contenedor menú y poodemos darle diferentes estilos
+ a dos contenedores que se encuentran en distintas partes*/
+.main .productos .contenedor-productos
+.main .productos .contenedor-productos{
+/*Le damos borde como cuadrado*/
+  border: 1px solid #000;
+  background: transparent;
+  /*Le damos a los cuatro lados cualquier px que eescogamos*/
+  padding: 20px;
+  /*Contenido que si se quiere sobresalir quiero que se oculte*/
+  overflow: hidden;
+
+}
+/*Trabajamos en productos y la etiqueta article*/
+.main .productos article{
+  /*Le damos una anchura del 50%*/
+  width: 48%;
+  /*Le mandamos al contenedor article que se valla a la izquierda*/
+  float: left;
+  /*Aqui le damos px para despaciado interno*/
+  padding: 20px;
+
+}
+/*Le damos caracteristicas a Nuestros Productos y Procesados Artesanales le damos estilos*/  
+.main .productos .categoria{
+  font-size: 32px;
+  font-weight: 700px;
+  text-align: center;
+
+}
+
+.main .productos .platillo{
+  /*Le separamos*/
+  margin-bottom: 30px;
+  /*Le damos mas espacio*/
+  padding-bottom: 20px;
+  /*Le damos formas con puntitos en una linea recta*/
+  border-bottom: 5px dotted #332a2a;
+  /*Ocultamos  todo el contenido que se sobre salga de la aplicación*/
+  overflow: hidden;
+}
+
 
 
 
