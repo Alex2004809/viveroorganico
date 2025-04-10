@@ -23,10 +23,10 @@ body{
 .contenedor{
     /*vamos a definir el ancho delcontenedor*/
     width: 100%;
-    /*Definimos el color del fondo del contenedor*/
-    background-color: rgb(0, 255, 0);
+    /*Definimos el color del fondo del contenedor*
+    background-color: rgb(0, 255, 0);/
     /*Definimos la anchura maxima de del contenedor*/
-    max-width: 1200px;
+    max-width: 1600px;
 /*Definimos el margen en automatico para centrar el contenedor*/
 margin: auto;
 /*Ocultamos el desbordamiento del contenedor*/
@@ -36,7 +36,7 @@ overflow: hidden;
 /*Le damos estilos al header*/
 header{
     /*Definimos el tamaño del header a un 90%*/
-    width: 90%;
+    width: 100%;
     /*Definimos la imagen del fondo*/
     background: url(../img/2.jpg);
   /*Definimos el color de fondo del header*/
@@ -49,18 +49,91 @@ header{
 /*Le damos estilos al header y que busque una clase que se llame contenedor*/
 header .contenedor{
     /*Definimos que el header tenga una posicion relativa*/
-    position: reativa;
-    height: 500px;
+    position: relative;
+    height: 700px;
   }
   
   /*Le damos estilos al menu dentro del header*/
   header .menu{
     /*Le damos el tamaño de la anchura*/
-    width: 100;
+    width: 200;
     /*Le decimos que alinee el texto a la derecha*/
-    text-align: center;
-  
+    text-align: right;
   }
+  /*Le damos estilos a las etiquetas del menú*/
+header .menu a{
+  /*Le voy a dar color a las etiquetas a*/
+  color: #fffcfc;
+  /*Le voy a dar un tamaño de letra a las etiquetas a*/
+  font-size: 20px;
+  font-weight: 600;
+  /*Le voy a dar un margen a las etiquetas a*/
+  /*Display inline-bloc*/
+  display: inline-block;
+  margin: 50px 30px;
+/*  Quito el margen de menú*/
+  text-decoration: none;
+  position: relative;
+}
+
+/*Utilizamos la seudoclase hover*/
+header .menu a:hover{
+  text-decoration: underline;
+}
+/*Aqui byscamos y trabajamos en la seccion texto*/
+
+header .texto{
+  width: 90%;
+  /*Agreamos el color del texto*/
+  color: #f3f0f0;
+  position: absolute;
+  top: 40%;
+  margin-top: -50px;
+}
+
+/*Trabajamos en la parte de nombre de cafeteria*/
+header .texto .nombre{
+  /*Agregamos un 60px para quetenga un tamaño de 60px a la cafetería*/
+  font-size: 60px;
+  font-weight: 500;
+}
+
+/*Trabajamos en la etiqueta span*/
+header .texto .nombre span{
+  font-weight: 340;
+}
+/*Trabajamos en la etiqueta h3 de la descripcion de la cafetería*/
+header .texto h3{
+  /*Aqui le damos un font-weight para que la letra sea un poco más delgadita*/
+  font-weight: 400;
+  font-size: 29px;
+  /*Agregamos que nuestro fondo de letra sea italica que se vea de forma cursiva*/
+  font-style: italic;
+}
+/*------MAIN------*/
+.main{
+  /*Agregamos el fondo de la imagen del fondo blanco*/
+  background: url('../img/11.jpg.jpg');
+  background-repeat: repeat;
+}
+
+/*seccion acerca-de*/
+.main .acerca-de .contenedor{
+  overflow: visible;
+  position: relative;
+}
+
+.main .acerca-de .foto{
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  z-index: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
+
+
+
   
     
   
